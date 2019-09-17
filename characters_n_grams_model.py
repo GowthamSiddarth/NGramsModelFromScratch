@@ -35,7 +35,7 @@ def generate_predictive_text(text, n_grams, n=3):
         possible_chars = n_grams[curr_seq]
         next_char = possible_chars[random.randrange(len(possible_chars))]
         output = output + next_char
-        curr_seq = text[i + 1: len(output)]
+        curr_seq = output[i + 1: len(output)]
 
     return output
 
