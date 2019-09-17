@@ -1,6 +1,9 @@
+import nltk
+import random
+import re
 from urllib import request
+
 from bs4 import BeautifulSoup
-import re, nltk, random
 
 
 def get_text_from_url(url):
